@@ -44,39 +44,47 @@ header{
 .navigation a:hover{ color:black}
 
 
-
-#filter{
-display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: baseline;
-  align-content: center;
-}
-#filter h3{
-    padding-left:20px;
-}
-.filter-icon{
+#container-filter{
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    padding: 30px;
-    width: 400px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+#box-filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0px 25px;
+    margin-top: 50px;
+    width: 800px;
+}
+#list-icon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     background-color: yellow;
-    
+    justify-content: left;
+
 }
-.filter-icon i{
-    border: 10px blue solid;
-    border-radius: 30px;
+#list-icon i{
+    padding-left: 20px;
+    border-radius: 20px;
     background-color: blue;
+    display: inline;
+    justify-content: center;
 }
-.filter-icon p{
-    margin: 0 15px;
+#list-icon p{
+    padding-left: 20px;
 }
+
+
+
+
+
+
+
 
 .icon{
-    margin: 30px;
-    background-color: darkred;
+    margin: 20px;
 }
 
 
@@ -92,14 +100,8 @@ display: flex;
     margin: 10px;
 }
 
-.box-icon{
-    padding: 20px;
-    display: inline-flex;
-}
 
-.icon-search{
-    padding: 30px;
-}
+
 
 .icon{
     display: flex;
@@ -111,7 +113,7 @@ display: flex;
 {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 #box
@@ -121,8 +123,6 @@ display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding:0px 25px;
-    background-color: blue; 
-    margin-top: 50px;
     height: 600px;
 }
 #list
@@ -183,13 +183,10 @@ display: flex;
 
 #side-container
 {
-    background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin: 10px;
     width: 400px;
-    
 }
 
 
@@ -197,28 +194,32 @@ display: flex;
  display: flex;
  flex-direction: column;
  padding: 20px;
- margin: 20px;
-background-color: indianred;
+ margin: 0 10px;
+background-color:#f2f2f2;
+border-radius: 20px;
+width: 400px;
 
 
 
 }
 .list-2 {
-    display: flex;
+    display: inline-block;
+    vertical-align: baseline;
     flex-direction: column;
-    background-color: grey;
     height:150px;
-    width: 300px;
+    width: 350px;
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
     border-radius: 10px;
+    background-color: white;
 }
 
 .list-2 img{
     width: 200px;
     height: 200x;
-    display: flex;
+    display: inline-block ;
     border-radius: 10px 10px 0px 0px ;
+   
    
 }
 
@@ -232,14 +233,12 @@ background-color: indianred;
 
 footer{
     background-color: grey;
-    height: 200px;
     flex-shrink: 1;
-    
+    flex-basis: 100%;
     bottom:0px;
 }
 
 .contenu-footer{
-    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: flex-start;
