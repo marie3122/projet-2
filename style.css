@@ -46,22 +46,44 @@ header{
 
 #container-search{
     margin: 20px;
-
-    }
-#container-search h3{
-   font-weight: 900;
-}
-
-#container-search h5{
-    padding-top: 5px;
-    font-size: medium;
-    font-weight: initial;
+    padding-left: 10px;
 }
 
 
+.search{
+    display: inline-flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid rgb(226, 226, 226)  ;
+}
 
+.search-icon{
+    position: relative;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:gray;
+    color: black;
+    margin-right: 20px;
+    border-radius: 10px 0 0 10px;
+}
 
+.value{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+.value2{
+    display: inline-flex;
+    height: 32px;
+    width: 100px;
+    background-color: crimson;
+    color: white;
 
+}
 
 #container-filter{
     margin:10px
@@ -74,8 +96,9 @@ header{
     display: inline-flex;
     align-items: center;
     padding-right: 20px;
-    border: 1px solid grey;
+    border: 1px solid rgb(226, 226, 226) ;
     border-radius: 20px;
+    margin: 10px;
     
 }
 .filter .filter-icon{
@@ -84,7 +107,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    border-radius:50%;
     background-color:#deebff;
     color: #0065fc;
     margin-right: 20px;
@@ -95,17 +118,21 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     padding: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-.icon-info i{
-    height: 32px;
-    width: 32px;
-    display: inline;
-    border-radius: 50px;
-    border: 1px blue solid;
-    background-color: blue;
-    color: chocolate;
+.icon-info {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+   border: 1px solid grey;
     margin-right: 20px;
+    color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 1000;
 }
 
 #container
@@ -133,7 +160,6 @@ header{
     justify-content: left;
     padding: 40px;
     border-radius: 20px;
-
 }
 
 #list-hebergement{
@@ -141,16 +167,14 @@ header{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    height: 500px;
-   
+    height: 500px;  
 }
 
 .list-1 img{
     width: 220px;
     height: 130px;
     display: flex;
-    border-radius: 10px 10px 0px 0px ;
-   
+    border-radius: 10px 10px 0px 0px ; 
 }
 
 .list-1{
