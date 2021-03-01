@@ -8,8 +8,8 @@ html { height: 100%; }
 body{
     background-color:white;
     height: 100%;
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
 }
 
 header{
@@ -44,69 +44,68 @@ header{
 .navigation a:hover{ color:black}
 
 
+#container-search{
+    margin: 20px;
+
+    }
+#container-search h3{
+   font-weight: 900;
+}
+
+#container-search h5{
+    padding-top: 5px;
+    font-size: medium;
+    font-weight: initial;
+}
+
+
+
+
+
+
 #container-filter{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    margin:10px
 }
-#box-filter{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding:0px 25px;
-    margin-top: 50px;
-    width: 800px;
+#container-filter h3{
+   display: inline-flex;
+   margin: 10px;
 }
-#list-icon{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    background-color: yellow;
-    justify-content: left;
-
-}
-#list-icon i{
-    padding-left: 20px;
+.filter{
+    display: inline-flex;
+    align-items: center;
+    padding-right: 20px;
+    border: 1px solid grey;
     border-radius: 20px;
-    background-color: blue;
-    display: inline;
+    
+}
+.filter .filter-icon{
+    height: 32px;
+    width: 32px;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color:#deebff;
+    color: #0065fc;
+    margin-right: 20px;
 }
-#list-icon p{
-    padding-left: 20px;
-}
-
-
-
-
-
-
-
 
 .icon{
-    margin: 20px;
-}
-
-
-
-#box-search{
-    display: flex;
-    justify-content: flex-start;
+    display: inline-flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding: 20px;
 }
-#box-search-1 h3, #box-search-1 h5{
-    padding-left: 10px;
-    margin: 10px;
-}
 
-
-
-
-.icon{
-    display: flex;
-    justify-content: left;
-    flex-direction: row;
+.icon-info i{
+    height: 32px;
+    width: 32px;
+    display: inline;
+    border-radius: 50px;
+    border: 1px blue solid;
+    background-color: blue;
+    color: chocolate;
+    margin-right: 20px;
 }
 
 #container
@@ -193,7 +192,7 @@ header{
 #list-populaire{
  display: flex;
  flex-direction: column;
- padding: 20px;
+ padding: 40px;
  margin: 0 10px;
 background-color:#f2f2f2;
 border-radius: 20px;
