@@ -46,11 +46,12 @@ header{
 
 #container-search{
     margin: 10px;
-    padding-left: 10px;
+    padding-left: 05px;
+    line-height: 25px;
 }
 
 .title-search{
-    padding: 10px;
+    padding: 05px;
 }
 
 
