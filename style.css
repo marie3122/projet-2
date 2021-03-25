@@ -31,17 +31,9 @@ header{
     display: flex;
     justify-content: flex-end;
     list-style: none;
-    margin: 0;
-    padding: 10px; 
-
+    margin:20px;
+    padding: 15px; 
   } 
-.bordure{
-    display: flex;
-    flex-direction: column;
- border-top:3px solid #0065fc;
- padding-top: 10px;
-}
-
 
   .navigation a {
     text-decoration: none;
@@ -51,48 +43,40 @@ header{
   }
 .navigation a:hover{ color:black}
 
-
-#container-search{
-    line-height: 25px;
+#container-search h3{
+    margin: 20px;
+    line-height: 0.5px;
 }
-
 .title-search{
-   padding: 20px;
-   line-height: 5px;
-
-}
-
-.search{
-    display: inline-flex;
-    align-items: center;
-    border-radius: 10px;
-    border: 1px solid rgb(226, 226, 226);
    margin: 20px;
+
 }
 
-.search-icon{
-    position: relative;
-    height: 32px;
-    width: 32px;
+.value i{
+    height:38px;
+    width: 38px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f2f2f2 ;
     color: black;
-    margin-right: 20px;
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px 0 0 10px;;
+    border: 1px solid rgb(226, 226, 226);
 }
-
 .value{
-    display: inline-flex;
-    align-items: center;
-    justify-content: flex-start;
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+.value1{
+    font-weight: 600;
+    margin: 10px;
 }
 .value2{
     display: inline-flex;
-    height: 32px;
-    width: 100px;
+    height: 38px;
+    width: 110px;
     background-color: #0065fc;
     color: white;
     border-radius: 0px 10px 10px 0px;
@@ -101,10 +85,7 @@ header{
     margin-left: 20px;
 }
 #container{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 20px;
-
+    padding: 20px;
 }
 
 #container-filter h3{
@@ -118,11 +99,11 @@ header{
     border: 1px solid rgb(226, 226, 226) ;
     border-radius: 20px;
     margin: 10px;
-    height: 32px;
+    height: 40px;
 }
 .filter .filter-icon{
-    height: 32px;
-    width: 32px;
+    height: 40px;
+    width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,13 +112,15 @@ header{
     color: #0065fc;
     margin-right: 15px;
 }
+.filter p{
+    font-weight: 600;
+}
+
+
 
 .icon{
     display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     padding: 20px;
-    justify-content: center;
     align-items: center;
 }
 
@@ -165,8 +148,12 @@ header{
   color: #0065fc;
   line-height: 0em;
   margin-left: 20px;
-
 }
+.etoiles2{
+    color: #f2f2f2;
+    line-height: 05px;
+}
+
 
 .note{
     font-weight: 600;
@@ -270,10 +257,7 @@ header{
     flex-direction: column;
 }
 
-.etoiles2{
-    color: grey;
-    line-height: 05px;
-}
+
 
 #list-activité-1{
     display: flex;
