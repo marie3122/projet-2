@@ -2,13 +2,14 @@ html { height: 100%; }
 
 
 body{
-    height: 100%;
     font-family:'Raleway', sans-serif;
+    margin-top: 0;
 }
 
 header{
     display: flex;
 }
+
 #navigation{
     display: flex;
     justify-content: space-between;
@@ -18,7 +19,11 @@ header{
 #navigation a {
     text-decoration: none;
     color: #0065fc;
-    padding: 20px;
+    padding: 30px;
+    font-weight: 500;
+}
+#menu_hebergement{
+    border-top: 2px solid #0065fc;
 }
 .logo{
     display: flex;
@@ -29,15 +34,16 @@ header{
     display: flex;
     flex-direction: row;
 }
+.menu-principal{
+    align-items: center;
+}
 .menu{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    margin: 0;
+    align-items: center;
 }
-.menu1{
-    border-top: 2px solid #0065fc;
-     
-  }
 
 .li{
     display: list-item;
@@ -45,9 +51,15 @@ header{
     text-decoration: none;
 }
 #container-search h3{
-    font-weight: 1000;
     margin: 20px;
     line-height: 0.5px;
+    font-weight: 800;
+}
+
+#container-search h5{
+    font-weight:600;
+    font-size: small;
+    line-height: 1px;
 }
 .title-search{
     margin: 20px;
@@ -57,8 +69,7 @@ header{
 
 }
 .wrap i{
-    height: 38px;
-    width: 38px;
+    width: 42px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,24 +83,24 @@ header{
 .searchTerm {
     border: 1px solid #f2f2f2;
     border-right: none;
-    padding: 5px;
-    width: 120px;
+    padding: 10px;
+    width: 200px;
     }
 
-.searchTerm2 {
+.bouton {
     background-color: #0065fc;
-    color: thistle;
-    padding: 5px;
     border: #0065fc;
-    width: 90px;
+    width: 115px;
+    height:42px;
     border-radius: 0px 10px 10px 0px;
-    color: white;
+   color: white;
+   font-size: medium;
+   font-weight: 500;
  }
 
 input::placeholder{
-    font-size: small;
-    font-weight:600;
-    font-family:'Raleway', sans-serif; 
+    font-size: medium;
+    font-weight:700;
     color: black;
 }
 #container{
@@ -99,13 +110,15 @@ input::placeholder{
 #container-filter h3{
    display: inline-flex;
    margin: 20px;
+   font-size: medium;
+   font-weight: 800;
 }
 .filter{
     display: inline-flex;
     align-items: center;
     padding-right: 10px;
-    border: 1px solid #f2f2f2 ;
-    border-radius: 20px;
+    border: 2px solid #f2f2f2 ;
+    border-radius: 30px;
     margin: 5px;
 
 }
@@ -118,10 +131,9 @@ input::placeholder{
     border-radius:50%;
     background-color:#deebff;
     color: #0065fc;
-    margin-right: 20px;
 }
 .filter p{
-    font-weight: 600;
+    font-weight: 800;
     margin: 10px;
 }
 
@@ -145,6 +157,7 @@ input::placeholder{
 }
 .icon p{
     font-size:15px;
+    font-weight: 500;
 }
 #box
 {
@@ -163,14 +176,16 @@ input::placeholder{
 }
 
 .note{
-    font-weight: 600;
+    font-weight: 800;
     display: flex;
     justify-content: flex-start;
-    padding: 25px;
-    margin-bottom: 10px;
+    line-height: 0;
+    padding: 30px ;
+    font-size: large;
+
 }
 #list-hebergement{
-    width: 850px;
+    width: 900px;
     height: 650px;
     background-color:#f2f2f2;
     border-radius: 20px;
@@ -182,8 +197,9 @@ input::placeholder{
     justify-content: space-evenly;
 }
 .section-title{
-    margin: 10px;
-    padding: 20px;
+    margin-left: 30px;
+    padding-top: 20px;
+    
 }
 .list-1{
     background-color: white;
@@ -191,6 +207,7 @@ input::placeholder{
     margin: 10px;
     width: 245px;
     height: 210px;
+    box-shadow: 2px 3px 3px #aaa;
 }
 
 .list-1 img{
@@ -220,7 +237,21 @@ input::placeholder{
     margin: 20px;
     line-height: 5px;
 }
+.pop{
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end
+}
+.populaire{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.populaire i{
+   margin-left: 80px;
+   margin-top: 25px;
 
+}
 #list-populaire{
     width: 400px;
     height: 650px;
@@ -250,6 +281,7 @@ input::placeholder{
     height: 150px;
     margin: 25px;
     margin-top: 10px;
+    box-shadow: 2px 3px 3px #aaa;
 
 }
 
@@ -258,6 +290,7 @@ input::placeholder{
     height: 140px;
     border-radius: 10px 0px 0px 10px ; 
     object-fit: cover;
+   
 }
 
 .img-resize2{
@@ -287,117 +320,130 @@ input::placeholder{
     margin-top: 45px;
     color: #0065fc;
 }
-
-.list-act p{
-    font-weight: 600;
-    margin: 10px;
-    line-height: 25px;
+#container-fin{
+    height: 650px;
 }
 
 #list-activite{
     display: flex;
-}
+    margin: 20px;
+    justify-content: space-between;
 
-.list-act1{
+}
+.list-activite2{
     display: flex;
     flex-direction: column;
+    margin-top: 0;
     justify-content: space-between;
-    background-color: white;
-    border-radius: 20px;
-    margin: 10px;
-    box-shadow: 2px 3px 3px #deebff;
-
-}
-.list-act2 .list-act3{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: white;
-    border-radius: 20px;
-    margin: 10px;
-    box-shadow: 2px 3px 3px #deebff;
 }
 
+.list-act1, .list-act4{
+    background-color: white;
+    border-radius: 20px 20px 20px 20px ;
+    margin: 10px;
+    width: 300px;
+    height: 470px;
+    box-shadow: 2px 3px 3px #aaa; 
+}
+
+.list-act2{
+    background-color: white;
+    border-radius: 20px 20px 20px 20px ;
+    width: 300px;
+    margin: 10px;
+    height: 250px;
+    box-shadow: 2px 3px 3px #aaa; 
+}
+.list-act3{
+    background-color: white;
+    border-radius: 20px 20px 20px 20px ;
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    box-shadow: 2px 3px 3px #aaa;
+}
+.list-act5, .list-act6{
+    background-color: white;
+    border-radius: 20px 20px 20px 20px ;
+    width: 300px;
+    margin: 10px;
+    height: 200px;
+    box-shadow: 2px 3px 3px #aaa;
+}
 
 .list-act1 img{
-    height: 450px;
-    width: 320px;
-    border-radius: 20px 20px 0px 0px;
-    display: flex;
+    height: 420px;
+    width: 300px;
+    border-radius: 20px 20px 0px 0px ;
     object-fit: cover;
 }
 .list-act2 img{
-    height: 200px;
-    width: 150px;
-    border-radius: 20px 20px 0px 0px;
-    display: flex;
-    flex-direction: column;
-    object-fit: cover;  
+    height: 190px;
+    width: 300px;
+    object-fit: cover; 
+    border-radius: 20px 20px 0px 0px ; 
 }
 .list-act3 img{
-    height: 200px;
-    width: 150px;
-    border-radius: 20px 20px 0px 0px;
-    display: flex;
-    flex-direction: column;
-    object-fit: cover;   
+    height: 100px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px ;
 }
 
 .list-act4 img{
-    height: 450px;
-    width: 320px;
-    border-radius: 20px 20px 0px 0px;
-    display: flex;
-    flex-direction: column;
+    height: 420px;
+    width: 300px;
     object-fit: cover;
+    border-radius: 20px 20px 0px 0px ;
 }
 .list-act5 img{
-    height: 200px;
-    width: 250px;
-    border-radius: 20px 20px 0px 0px;
-    display: flex;
-    flex-direction: column;
+    height: 150px;
+    width: 300px;
     object-fit: cover;
+    border-radius: 20px 20px 0px 0px ;
 }
 
 .list-act6 img{
-    height: 200px;
-    width: 250px;
-    border-radius: 20px 20px 0px 0px;
-    display: flex;
-    flex-direction: column;
+    height: 150px;
+    width: 300px;
     object-fit: cover;
+    border-radius: 20px 20px 0px 0px ;
 }
+.title-pop{
+    font-weight: 600;
+    margin: 15px;
+}
+
 
 .bloc-activite img{
     width: 240px;
     height: 160px;
-
 }
 
 footer{
     background-color: #f2f2f2;
-    padding: 10px;
 }
 
 .contenu-footer{
-    display: flex;
-    font-size: 15px;
-    
+    width:1000px;
+    height: 200px;
+    display: flex; 
+    justify-content: space-between;
+    padding-top: 20px;
+   margin-right: 100px;
+
 }
-.bloc{
-    width: 100%;
-    margin: 20px;
-}
-.footer-propos h3, .footer-hebergement h3, .footer-assistance h3{
-    padding-bottom: 20px;
+
+.title-fin{
     font-size: 20px;
 }
 .liste-propos, .liste-hebergement, .liste-assistance{
     list-style-type: none; 
+
 }
 .liste-propos a,.liste-hebergement a,.liste-assistance a {
     text-decoration: none;
+    line-height: 20px;
     color: black;
 }
 .liste-assistance li, .liste-hebergement li, .liste-propos li{

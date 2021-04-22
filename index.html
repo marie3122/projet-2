@@ -8,8 +8,8 @@
    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
     crossorigin="anonymous">
     <link rel = "preconnect" href = "https://fonts.gstatic.com">
-    <link href = "https://fonts.googleapis.com/css2? family = Raleway: wght @ 900 & display = swap"
-     rel = "feuille de style">  
+<link href = "https://fonts.googleapis.com/css2? family = Raleway & display = swap" 
+rel = "feuille de style ">
 </head>
  
 <body>
@@ -19,15 +19,15 @@
     <div class="logo">
             <a href="#"><img src="logo/Reservia.svg"></a>
         </div>
-        <div class="menu-principal">
+        <nav class="menu-principal">
             <ul class="menu">
-            <li class="menu1"><a href="hébergement.html">Hébergements</a></li>
-            <li class="menu2"><a href="activités.html">Activités</a></li>
+            <li class="menu1"><a id="menu_hebergement" href="hébergement.html">Hébergements</a></li>
+            <li class="menu2"><a id="menu_activite" href="activités.html">Activités</a></li>
             <li class="menu3"><a href="inscription.html">S'inscrire</a></li>
             </ul>
         </nav>
     </div> 
-        </div>
+    
     </header>
 
 
@@ -44,7 +44,7 @@
         <div class="search">
         <i class="fas fa-map-marker-alt"></i>
           <input type="text" class="searchTerm" placeholder="Marseille, France">
-          <input type="text2" class="searchTerm2" placeholder="Rechercher">
+          <button class="bouton">Rechercher</button>
         </div>
    </div> 
 </section>
@@ -177,7 +177,7 @@
 
             <div class="list-1">
             <div id="img-resize">      
-                <img src="hebergements/4_small/auberge.jpg">
+                <img src="hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
             </div>
             <div class="hotel">
             <p class="list-name">Auberge le panier</p>
@@ -220,11 +220,17 @@
             
         
             <div id="list-populaire">
-        
-                <h2 class="section-title">Les plus populaires</h2>
-                <div class="icon-info2">    
-            <i class="fas fa-chart-line"></i>
-    </div>
+
+
+                <div class="populaire">
+                    <div class="pop">
+                        <h2 class="section-title">Les plus populaires</h2> 
+                    </div>
+                    <i class="fas fa-chart-line"></i>
+                    </div>
+
+    
+                
             <div id="list-populaire-1">
             <div id="list-2">
 
@@ -294,52 +300,53 @@
         <h2 class="section-title">Activités à Marseille</h2>
 
         <div id="list-activite">
-
+            
 
         <div class="list-act1">
             <div id="img-resize4">
             <img src="activites/2_large/port.jpg">
             </div>
-            <p>Vieux port</p>
+            <p class="title-pop">Vieux port</p>
         </div>
       
+        <div class="list-activite2">
         <div class="list-act2">
             <div id="img-resize4">
             <img src="activites/2_large/fort.jpg">
             </div>
-            <p>Fort de Pomègues</p>
+            <p class="title-pop">Fort de Pomègues</p>
         </div>
 
         <div class="list-act3">
             <div id="img-resize4">
             <img src="activites/2_large/frioul.jpg">
             </div>
-            <p>Iles du Frioul</p>
+            <p class="title-pop">Iles du Frioul</p>
       </div> 
-
+    </div>
         <div class="list-act4">
             <div id="img-resize4">
             <img src="activites/2_large/calanques.jpg">
         </div>
-            <p>Parc national des Calanques</p>
+            <p class="title-pop">Parc national des Calanques</p>
         </div>
    
-
+        <div class="list-activite2">
         <div class="list-act5">
             <div id="img-resize4">
             <img src="activites/2_large/garde.jpg">
             </div>
-            <p>Notre-Dame-de-la-Garde</p>
+            <p class="title-pop">Notre-Dame-de-la-Garde</p>
             </div>
 
         <div class="list-act6">
             <div id="img-resize4">
             <img src="activites/2_large/parc.jpg">
             </div>
-            <p>Parc Longchamps</p>
+            <p class="title-pop">Parc Longchamps</p>
         </div>
     </div>
-
+        </div>
      </div> 
   
 
@@ -350,27 +357,29 @@
 <div class="clear" style="clear:both"></div>
     <footer>
         <div class="contenu-footer">
-            <div class="bloc footer-propos">
-                    <h3>A propos</h3>
+            <div class="bloc-footer-propos">
+                    
                     <ul class="liste-propos">
+                        <h3 class="title-fin">A propos</h3>
                         <li><a href="#">Fonctionnement du site</a></li>
                         <li><a href="#">Conditions générales de vente</a></li>
                         <li><a href="#">Données et confidentialité</a></li>
                     </ul>
             </div>
 
-            <div class="bloc footer-hebergement">
-                    <h3>Nos Hébergements</h3>
+            <div class="bloc-footer-hebergement">
                     <ul class="liste-hebergement">
+                    <h3 class="title-fin">Nos Hébergements</h3>
                     <li><a href="#">Charte qualité</a></li>
                     <li><a href="#">Soumettre votre hôtel</a></li>
                     </ul>
             </div>
 
 
-            <div class="bloc footer-assistance">
-                    <h3>Assistance</h3>
+            <div class="bloc-footer-assistance">
+                
                     <ul class="liste-assistance">
+                        <h3 class="title-fin">Assistance</h3>
                         <li><a href="#">Centre d'aide</a></li>
                         <li><a href="#">Nous contacter</a></li>
                     </ul>
