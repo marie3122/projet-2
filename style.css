@@ -2,10 +2,36 @@ html { height: 100%; }
 
 
 body{
-    font-family:'Raleway', sans-serif;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
     margin-top: 0;
 }
+@font-face 
+{
+	font-family: "Raleway";
+	src: url('fonts/Raleway-Regular.ttf');
+}
 
+@font-face 
+{
+	font-family: "Raleway";
+	font-weight: bold;
+	src: url('fonts/Raleway-Bold.ttf');
+}
+
+
+#bloc-page{
+    width: auto;
+    margin: auto;
+}
+
+@media all and (max-width: 767px)
+{
+    #bloc_page
+    {
+        width: 100%;
+        padding: 0px;
+    }
+}
 header{
     display: flex;
 }
@@ -50,7 +76,7 @@ header{
     text-align: right;
     text-decoration: none;
 }
-#container-search h3{
+#container-search h1{
     margin: 20px;
     line-height: 0.5px;
     font-weight: 800;
@@ -207,7 +233,7 @@ input::placeholder{
     margin: 10px;
     width: 245px;
     height: 210px;
-    box-shadow: 2px 3px 3px #aaa;
+    ;box-shadow: 0px 5px 10px #dddcdc;
 }
 
 .list-1 img{
@@ -281,7 +307,7 @@ input::placeholder{
     height: 150px;
     margin: 25px;
     margin-top: 10px;
-    box-shadow: 2px 3px 3px #aaa;
+    box-shadow: 0px 5px 10px #dddcdc;
 
 }
 
@@ -343,7 +369,7 @@ input::placeholder{
     margin: 10px;
     width: 300px;
     height: 470px;
-    box-shadow: 2px 3px 3px #aaa; 
+    box-shadow: 0px 5px 10px #dddcdc;
 }
 
 .list-act2{
@@ -352,7 +378,7 @@ input::placeholder{
     width: 300px;
     margin: 10px;
     height: 250px;
-    box-shadow: 2px 3px 3px #aaa; 
+    box-shadow: 0px 5px 10px #dddcdc; 
 }
 .list-act3{
     background-color: white;
@@ -360,7 +386,7 @@ input::placeholder{
     width: 300px;
     height: 150px;
     margin: 10px;
-    box-shadow: 2px 3px 3px #aaa;
+    box-shadow: 0px 5px 10px #dddcdc;
 }
 .list-act5, .list-act6{
     background-color: white;
@@ -368,7 +394,7 @@ input::placeholder{
     width: 300px;
     margin: 10px;
     height: 200px;
-    box-shadow: 2px 3px 3px #aaa;
+    box-shadow: 0px 5px 10px #dddcdc;
 }
 
 .list-act1 img{
@@ -455,3 +481,137 @@ footer{
 
 
 .navigation a:hover{ color:black}
+
+@media all and (max-width: 480px) and (max-width: 780px)
+{
+    #navigation{
+        width: auto;
+        justify-content: space-evenly;
+    }
+   
+    .logo{
+        width: 30%;
+        margin-left: 5%;
+    }
+    .menu-principal
+    {
+        width: auto;
+        margin-left: 10px;
+    
+    }
+    .menu-principal ul
+    {
+        flex-direction: column-reverse;
+        justify-items: start;
+        
+    }
+.menu-principal li
+    {
+        padding-left: 0px;
+    }
+
+    .menu-principal a
+    {
+        font-size: 1.1em;
+    }
+
+    .menu-principal a:hover
+    {
+        border-bottom: 0;
+    }
+   
+    img{
+        flex-direction: column;
+    }
+    #container-search h1{
+        min-width: auto;
+        line-height: 30px;
+    }
+   #container.filter{
+       margin-bottom: 50px;
+       width: auto;
+   }
+    .filter-icon{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: auto;
+
+    }
+    #box{
+        width: auto;
+        flex-direction: column-reverse;
+    }
+    #container img{
+        width: auto;
+        flex-direction: column;
+    }
+    #list-hebergement{
+        width: auto;
+        margin:auto;
+        height: 1600px;
+        background-color: white;
+        justify-content: center;
+    }
+    
+    .list-1{
+        min-width: 350px;
+    }
+
+    #list-populaire img{
+        width: auto;
+        flex-direction: column;
+    }
+    #list-populaire{
+        width: 100%;
+        border-radius: 0;
+        justify-content: stretch;
+    
+    }
+    #list-populaire-1{
+        min-width: 350px;
+    }
+    #list-2{
+        min-width: 350px;
+
+    }
+    .name{
+        line-height: 20px;
+    }
+    .etoiles-bloc2{
+        line-height: 0;
+    }
+    #container-fin{
+        width: auto;
+        height: auto;
+    }
+
+    #box3{
+        width: auto;
+    }
+    #box3 img{
+        flex-direction: column;
+    }
+    #list-activite{
+        flex-direction: column;
+        width: auto;
+        justify-content: center;
+    }
+   #list-activite img{
+       min-width: 350px;
+       min-height: 100px;
+   }
+   .list-act1, .list-act2, .list-act3, .list-act4, .list-act4, .list-act5, .list-act6{
+       min-width: 350px;
+       min-height: 150px;
+   }
+
+    .contenu-footer{
+        height: auto;
+        width: auto;
+        flex-direction: column;
+    }
+    .contenu-footer li{
+        width: auto;
+        
+    }
+}
